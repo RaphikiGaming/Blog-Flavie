@@ -311,7 +311,12 @@ body{
 	    animation-name: scroll;
 	    position: absolute;
 	    left: 90%;
-	  }
+	}
+
+	.bi{
+		height: 3vw;
+		width: 3vw;
+	}
 
 	@keyframes scroll {
 	  0% {
@@ -635,7 +640,12 @@ body{
 	    animation-name: scroll;
 	    position: absolute;
 	    left: 90%;
-	  }
+	}
+
+	.bi{
+		height: 3vw;
+		width: 3vw;
+	}
 
 	@keyframes scroll {
 	  0% {
@@ -951,7 +961,12 @@ body{
 	    animation-name: scroll;
 	    position: absolute;
 	    left: 90%;
-	  }
+	}
+
+	.bi{
+		height: 2vw;
+		width: 2vw;
+	}
 
 	@keyframes scroll {
 	  0% {
