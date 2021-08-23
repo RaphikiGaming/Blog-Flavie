@@ -1,13 +1,3 @@
-var largeur = window.innerWidth;
-var hauteur = window.innerHeight;
-
-if (largeur <= hauteur) {
-	document.getElementById("stylesheet").setAttribute("href", "portrait.css");
-	alert("Si vous souhaitez changer l'orientation de la page, actualisez la page après avoir changé l'orientation de votre appareil")
-} else {
-	document.getElementById("stylesheet").setAttribute("href", "style.css");
-}
-
 var slide = 1;
 var duree = 6000;
 

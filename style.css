@@ -5,7 +5,196 @@ body{
 	overflow-x: hidden;
 }
 
-@media screen and (min-width: 0px){
+@media screen and (orientation: portrait){
+	.header{
+		height: 26vw;
+		width:  100%;
+		background-color: #000;
+		box-shadow: 0 0 4vw #000;
+		z-index: 2;
+		position: fixed;
+	}
+
+		.header > .c_1 {
+			height: 14vw;
+			width: 100%;
+			background-color: #fff;
+			border-bottom: 1vw solid #b37288;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+		}
+
+			.header > .c_1 > .c_logo{
+				height: 14vw;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+			}
+
+				.header > .c_1 > .c_logo > img{
+					max-height: 100%;
+					padding-left: 4vw;
+				}
+
+				.header > .c_1 > .c_logo > h3{
+					padding-left: 3vw;
+					font-size: 6vw;
+					color: #cc99aa;
+					font-family: calibri;
+					user-select: none;
+				}
+
+			.bi-arrow-left-circle-fill{
+				max-height: 13vw;
+				margin-right: 4vw;
+				color: #b0b0b0;
+				transition: color 0.5s;
+			}
+
+			.bi-arrow-left-circle-fill:hover{
+				color: #cc99aa;
+			}
+
+		.header > .container_slider{
+			height: 12vw;
+			background-color: #cc99aa;
+			position: relative;
+		}
+
+			.header > .container_slider > .slide1{
+				height: 12vw;
+				width: 100%;
+				transition: left 2s;
+				position: absolute;
+				left: 0;
+			}
+
+				.header > .container_slider > .slide1 > h1{
+					font-size: 7vw;
+					line-height: 1vw;
+					font-family: Lucida Calligraphy,calibri;
+					color:  #fff;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+			.header > .container_slider > .slide2{
+				height: 12vw;
+				width: 100%;
+				transition: left 2s;
+				position: absolute;
+				left: 100%;
+			}
+
+				.header > .container_slider > .slide2 > h1{
+					font-size: 4vw;
+					line-height: 4vw;
+					font-family: Lucida Calligraphy,calibri;
+					color:  #fff;
+					text-align: center;
+					user-select: none;
+					position: relative;
+				}
+
+	.container_center{
+		width: 100%;
+		overflow-y: overlay;
+		overflow-x: hidden;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: wrap;
+		z-index:  1;
+		position: absolute;
+		top: 26vw;
+	}
+
+		.container_center > div{
+			width: 80vw;
+			padding: 4vw 0 4vw 0;
+			border-bottom: 0.3vw solid grey;
+			animation-name: spawn;
+			animation-duration: 5s;
+		}
+
+		.container_center > div > a{
+			text-decoration: none;
+		}
+
+	h2{
+		font-size: 9vw;
+		color: #00b57e;
+		font-family: calibri;
+		text-align: center;
+		user-select: none;
+	}
+
+	p{
+		font-size: 5vw;
+		color: #6b6b6b;
+		font-family: calibri;
+		text-align: center;
+		user-select: auto;
+	}
+
+	a{
+		text-align: center;
+		font-family: calibri;
+		font-size: 3vw;
+		color: #00b57e;
+		text-decoration: none;
+		transition: color 0.5s;
+		position:  relative;
+	}
+
+	a:hover{
+		color: #cc99aa;
+	}
+
+	@keyframes spawn{
+		0%{
+			opacity: 0%;
+		}
+
+		100%{
+			opacity: 100%
+		}
+	}
+
+	img{
+		user-select: none;
+		max-width: 100%;
+	}
+
+	iframe{
+		user-select: none;
+		width: 80vw;
+		height: 45vw;
+	}
+
+	/*-----Design Scrollbar-----*/
+	::-webkit-scrollbar {
+	  width: 0;
+	}
+	::-webkit-scrollbar-button {
+	  width: 0px;
+	  height: 0px;
+	}
+	::-webkit-scrollbar-thumb {
+	  background: #b0b0b0;
+	  border: 0.1vw none #d1d9e3;
+	  border-radius: 5px;
+	}
+}
+
+@media screen and (orientation: landscape) and (min-width: 0px){
 	.header{
 		height: 11vw;
 		width:  100%;
@@ -149,7 +338,7 @@ body{
 		font-size: 3.5vw;
 		color: #00b57e;
 		text-decoration: none;
-		transition: color 0.5s;	
+		transition: color 0.5s;
 		position:  relative;
 	}
 
@@ -179,7 +368,7 @@ body{
 	}
 }
 
-@media screen and (min-width: 800px){
+@media screen and (orientation: landscape) and (min-width: 800px){
 	.header{
 		height: 9vw;
 		width:  100%;
@@ -323,7 +512,7 @@ body{
 		font-size: 3vw;
 		color: #00b57e;
 		text-decoration: none;
-		transition: color 0.5s;	
+		transition: color 0.5s;
 		position:  relative;
 	}
 
@@ -353,7 +542,7 @@ body{
 	}
 }
 
-@media only screen and (min-width: 1024px){
+@media screen and (orientation: landscape) and (min-width: 1024px){
 
 	.header{
 		height: 7vw;
@@ -498,7 +687,7 @@ body{
 		font-size: 2vw;
 		color: #00b57e;
 		text-decoration: none;
-		transition: color 0.5s;	
+		transition: color 0.5s;
 		position:  relative;
 	}
 
